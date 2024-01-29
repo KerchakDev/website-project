@@ -1,0 +1,113 @@
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+body {
+  font-family: Georgia;
+  background: #F3D8C7;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia;
+  font-size: 100px;
+  background: #F3D8C7;
+  color: white;
+  text-align: center;
+   animation: blink 2s infinite;
+}
+
+h12 {
+  font-size: 50px;
+  font-family: Georgia;
+  background: #F3D8C7;
+  color: white;
+  text-align: center;
+   animation: blink 2s infinite;
+}
+
+.ligne {
+  width: 100%;
+  height: 1px;
+  background-color: #FFFF;
+}
+
+.button-container {
+  text-align: center;
+}
+.button-container a {
+  display: inline-block;
+   float: left;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #D0B8AC;
+  border: 1px solid #D0B8AC;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button-container a:hover {
+    background-color: #EFE5DC;
+}
+
+.button-container2 {
+  text-align: center;
+}
+.button-container2 a {
+  list-style: none;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #D0B8AC;
+  border: 1px solid #D0B8AC;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button-container2 ul {
+  list-style: none;
+}
+.button-container2 a:hover {
+    background-color: #EFE5DC;
+}
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image:hover {
+  background-color: #EFE5DC;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  transform: translateX(20px); /* Déplacement de l'image vers la droite */
+}
+
+.text {
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  transform: translateX(-100%);
+  white-space: nowrap;
+  color: red;
+  font-size: 36px;
+  transition: transform 0.3s ease;
+}
+
+
+.image:hover .text {
+  transform: translateX(0);
+}
